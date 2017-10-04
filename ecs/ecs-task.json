@@ -1,0 +1,26 @@
+{
+  "networkMode": "bridge",
+  "containerDefinitions": [
+    {
+      "volumesFrom": [],
+      "memory": 256,
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "mountPoints": [],
+      "name": "cntnr-microserver-nginx",
+      "environment": [
+      ],
+      "image": "908234515689.dkr.ecr.eu-west-2.amazonaws.com/microservice/nginx-redirect:latest",
+      "cpu": 0
+    }
+  ],
+  "placementConstraints": [],
+  "volumes": [],
+  "family": "tsk-nginx"
+}
