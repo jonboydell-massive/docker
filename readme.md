@@ -1,3 +1,5 @@
+Docker utility scripts for local container development and ECS integration
+
 These scripts require that you specify an AWS profile to use and that you get your AWS cli output in JSON
 
 Prerequisites:
