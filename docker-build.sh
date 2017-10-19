@@ -3,4 +3,7 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
+IMAGENAME=${1}
+echo "Will build ${IMAGENAME}"
+
 docker build -t ${IMAGENAME} .
